@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>DIY program</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+
+    <body>
+        <section class="navbar">
+            <a href="index.html"><u>NewMe</u></a>
+            <a href="index.html">Home</a>
+
+            <nav class="subnav">
+                <button class="subnavbtn">DIY program </button>
+                <nav class="subnav-content">
+                    <a href="DetoxClass.html">Detox Class</a>
+                    <a href="VRRelaxMediate.html">VR Relax Mediate</a>
+
+                </nav>
+            </nav>
+
+
+        </section>
+
+        <!-- header -->
+        <header class="detoxclass">
+            <h2>DIY program</h2>
+
+
+        </header>
+
+        <section class="detoxconta">
+            <article class="diycontent">
+                <h2>In this program:</h2>
+                <ul>
+                    <li>
+                        You will let our nuturists and detox exports to guide you to reverse refresh from your body
+                        inside </li>
+                    <li>Expercise through our <u>unique approach</u> blends medical science with <u>natural holistic</u>
+                        healing methods.
+                    </li>
+
+
+
+                </ul>
+                <br>
+                <p>
+                    And, our certified plant-based nutrition & natural health expert will also take you through your
+                    healing journey in a step-by-step way. </p>
+                <br>
+
+                <br>
+                <h3> Price: $400/h</h3>
+
+                <p><b>Bonds</b>:</p>
+                <p>The book more than two classes your will get <b>10 % voucher</b> in your next <b>room booking</b>
+                    with us .</p>
+            </article>
+
+
+            <article class="diytext">
+                <button id="myBtn" class="btn">Explore More</button>
+
+                <!-- The class -->
+                <nav id="myModal" class="modal">
+
+                    <!-- class content -->
+                    <nav class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/diy_consult.jpg" alt="DIY consult image" width="100%">
+                        <u>
+                            <h2>Only 4 spots Left.</h2>
+                        </u>
+                        <h3>What are you waiting for ? Cannot wait to join us?
+                            Please click Book Now.</h3>
+
+                    </nav>
+
+                </nav>
+
+            </article>
+
+
+            <br>
+
+            <button type="button" class="btn" onclick="window.location.href= 'register.html';">Book
+                Now</button>
+
+        </section>
+        <!-- About Container -->
+
+
+
+
+        <!-- contact -->
+        <footer class="contact">
+            <article class="contact-container">
+                <nav>
+                    <h2>About Us </h2>
+                    <p>We’re aim to provide best service for you .</p>
+                    <ul class="social-icons">
+                        <li class="flex">
+                            <a href="https://www.instagram.com/carrieice_/"><img src="images/instagram.png"
+                                    alt="instagram"></a>
+                        </li>
+                        <li class="flex">
+                            <a href="https://www.facebook.com/profile.php?id=100027251832862"><img
+                                    src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" /></a>
+                        </li>
+                        <li class="flex">
+                            <a href="https://www.linkedin.com/in/carrie-wang-0838871ba/"><img src="images/linkedin.png"
+                                    alt="instagram"></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="con_link">
+                    <h2>Useful Links</h2>
+
+                    <a href="index.html#rooms">Rooms</a>
+                    <a href="index.html#services">Services</a>
+
+                </nav>
+
+                <nav class="con_link">
+                    <h2>More about us </h2>
+
+
+                    <a href="index.html#contact">Contact Us</a>
+
+                </nav>
+
+                <nav>
+                    <h2>Have A Question</h2>
+                    <nav class="contact-item" id="contact">
+                        <span>
+                            <img src="images/location.png" alt="location">
+                        </span>
+                        <span>
+                            65 Fake Beach,Rinbudhoo, Maldives
+                        </span>
+                    </nav>
+                    <nav class="contact-item">
+                        <span>
+                            <img src="images/mobile-phone.png" alt="photo">
+                        </span>
+                        <span>
+                            +61415 5176 99
+                        </span>
+                    </nav>
+                    <nav class="contact-item">
+                        <span>
+                            <img src="images/email-2.png" alt="email">
+                        </span>
+                        <span>
+                            s4723675@student.uq.edu.au
+                        </span>
+                    </nav>
+                </nav>
+            </article>
+        </footer>
+
+
+
+        <script>
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the class
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </body>
+
+</html>

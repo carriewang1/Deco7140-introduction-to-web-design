@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+
+    <body>
+        <section class="navbar">
+            <a href="index.html"><u>NewMe</u></a>
+            <a href="index.html">Home</a>
+
+            <section class="subnav">
+                <button class="subnavbtn">LogIn </button>
+                <nav class="subnav-content">
+
+                    <a href="register.html">Sign In</a>
+
+                </nav>
+            </section>
+
+
+        </section>
+
+        <!-- header -->
+        <header class="login_header" id="header">
+
+
+            <article class="head-bottom flex">
+                <h1>THE BEST PLACE TO MAKE YOU RELAX </h1>
+
+                <h3>The NewMe resort is located on the home to hundreds of perfect tropical islands, Maldives. You can
+                    have a Spa, herbal massage and Detox Plan to let you escape your busy life and refresh yourself from
+                    the inside.</h3>
+
+                <button type="button" class="btn" onclick="window.location.href= '#login';">Book
+                    Now</button>
+            </article>
+        </header>
+        <!-- end of header -->
+        <section class="book" id="bookit">
+            <form class="book-form">
+                <nav class="form-item">
+                    <label id="checkin-date">Check In Date: </label>
+                    <input type="date" required id="chekin-date" value="">
+                </nav>
+                <nav class="form-item">
+                    <label id="checkout-date">Check Out Date: </label>
+                    <input type="date" required id="chekout-date" value="">
+                </nav>
+                <nav class="form-item">
+                    <label id="adult1">Adults: </label>
+                    <input type="number" onfocus="this.value=''" min="1" required value="1" id="adult">
+                </nav>
+                <nav class="form-item">
+                    <label id="children1">Children: </label>
+                    <input type="number" onfocus="this.value=''" min="0" value="0" id="children">
+                </nav>
+
+                <nav class="form-item">
+                    <label>Studio - Room </label>
+                    <input type="number" onfocus="this.value=''" min="0" value="0" id="quantityStudio"> <!--click clear initial -->
+                </nav>
+                <nav class="form-item">
+                    <label>Family - Room </label>
+                    <input type="number" onfocus="this.value=''" min="0" value="0" id="quantityFamily"> <!--click clear initial -->
+                </nav>
+
+                <nav class="form-item">
+                    <label>Detox Class </label>
+                    <input type="number" onfocus="this.value=''" min="0" value="0" id="quantityDetox"> <!--click clear initial -->
+                </nav>
+                <nav class="form-item">
+                    <label>VR Meditate </label>
+                    <input type="number" onfocus="this.value=''" min="0" value="0" id="quantityVR"> <!--click clear initial -->
+                </nav>
+                <nav class="form-item">
+                    <label>VR Meditate </label>
+                    <input type="number" onfocus="this.value=''" min="0" value="0" id="quantityDiy"> <!--click clear initial -->
+                </nav>
+                <nav class="form-item">
+                    <button class="btn" type="button" id="submitButton">Check price now
+                        <h5 id="totalPrice">
+                        </h5>
+                    </button>
+
+                </nav>
+                <h4 id="confirm"><a href="#login">Comfirm you details and ready to book ?</a></h4>
+                <h4 id="save">We'll process your booking details after you finished login .</h4>
+
+            </form>
+        </section>
+
+
+        <!-- login form section starts -->
+
+        <section class="login-form" id="login">
+
+            <form action="">
+                <h3>user login</h3>
+                <nav class="inputBox">
+                    <img class="icon" src="images/id-card.png" alt="Email phto">
+                    <input type="text" id="usrname" name="usrname" required placeholder="Please enter your userId">
+                </nav>
+                <nav class="inputBox">
+                    <span class="icon"><img src="images/password.png" alt="password image"></span>
+                    <input type="password" id="psw" name="psw" placeholder="Please enter your password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"
+                        required>
+                </nav>
+
+                <button  type="submit" class="btn_log" value="Submit">Submit</button>
+                <button onclick="checkDetail()" class="btn-paid">$$Paid already$$</button> 
+                
+
+
+
+
+                <a href="register.html" class="btn">Create an account</a>
+            </form>
+            
+
+
+
+        </section>
+
+
+        <!-- login form section ends -->
+
+        <!-- contact -->
+        <footer class="contact">
+            <article class="contact-container">
+                <section>
+                    <h2>About Us </h2>
+                    <p>We’re aim to provide best service for you .</p>
+                    <ul class="social-icons">
+                        <li class="flex">
+                            <a href="https://www.instagram.com/carrieice_/"><img src="images/instagram.png"
+                                    alt="instagram"></a>
+                        </li>
+                        <li class="flex">
+                            <a href="https://www.facebook.com/profile.php?id=100027251832862"><img
+                                    src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" /></a>
+                        </li>
+                        <li class="flex">
+                            <a href="https://www.linkedin.com/in/carrie-wang-0838871ba/"><img src="images/linkedin.png"
+                                    alt="instagram"></a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="con_link">
+                    <h2>Useful Links</h2>
+
+                    <a href="index.html#rooms">Rooms</a>
+                    <a href="index.html#services">Services</a>
+
+                </section>
+
+                <section class="con_link">
+                    <h2>More about us </h2>
+
+
+                    <a href="index.html#contact">Contact Us</a>
+
+                </section>
+
+                <section>
+                    <h2>Have A Question</h2>
+                    <nav class="contact-item" id="contact">
+                        <span>
+                            <img src="images/location.png" alt="location">
+                        </span>
+                        <span>
+                            65 Fake Beach,Rinbudhoo, Maldives
+                        </span>
+                    </nav>
+                    <nav class="contact-item">
+                        <span>
+                            <img src="images/mobile-phone.png" alt="photo">
+                        </span>
+                        <span>
+                            +61415 5176 99
+                        </span>
+                    </nav>
+                    <nav class="contact-item">
+                        <span>
+                            <img src="images/email-2.png" alt="email">
+                        </span>
+                        <span>
+                            s4723675@student.uq.edu.au
+                        </span>
+                    </nav>
+                </section>
+            </article>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/checkprice.js"></script>
+
+
+
+    </body>
+
+</html>
