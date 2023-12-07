@@ -22,6 +22,7 @@ The second assessment :
 In the Interim Website assessment (the 2nd part of the Website Project), I built a partial version of your fully-functioning, client-side website that responds to the provided Website Project brief. This assessment primarily focuses on demonstrating good practice web design via HTML & CSS. Work towards this assessment will then inform the 3rd part of the Website Project — the Ultimate Website assessment.
 
 ----
+
 The final website :
 In the Ultimate Website assessment (the 3rd part of the Website Project), I finish building my fully-functioning, client-side website that responds to the provided Website Project brief. This assessment primarily focuses on demonstrating good practice web design via JavaScript, but also demonstrates the culmination of HTML & CSS learning.
 
